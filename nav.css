@@ -1,0 +1,132 @@
+nav ul li a{
+    text-decoration: none;
+    justify-content: space-between;
+   
+    color:white ;
+    background-color:rgb(255, 0, 170);
+  
+  
+   padding: 10px;
+   width:100%;
+   border-radius: 200px;
+   
+}
+body{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+    background-image: url("https://th.bing.com/th/id/OIP.DDiZPFWzHt_E-2wdu8pccgHaEK?rs=1&pid=ImgDetMain");
+}
+a:hover {
+    background-color: rgb(136, 78, 136);
+    color: white;
+    border: 3px solid pink;
+    transform: scale(2,2);
+}
+h1{
+    color: white;
+    text-align: left;
+    align-content: left;
+
+   margin-top: 0.1px;
+   margin-right: 30px;
+   font-weight: bolder;
+   font-size: 40px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+nav ul li{
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
+    height: 20px;
+   
+
+}
+nav{
+    display: flex;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgba(182, 54, 15, 0.37);
+   border: 2px solid rgba(255, 255,255, 0.18);
+
+    justify-items: center;
+    
+}
+
+.icon{
+    display: none;
+}
+#check{
+    display: none;
+    cursor: pointer;
+}
+.search{
+    border-radius: 300px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 0.5px;
+}
+
+
+
+@media screen and (max-width:850px){
+    nav ul{
+        display: none;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+
+    }
+    nav{
+        
+        justify-items: right;
+        padding: 40px;
+        justify-content: space-between;
+ 
+        
+
+    }
+   
+    nav ul li{
+   align-items: right;
+   padding: 20px;
+   width: 100px;
+  
+    }
+    #check:checked ~ ul{
+     display: flex;
+     flex-direction: column;
+    
+    }
+    .icon{
+        margin-top: 7px;
+        display: inline;
+        color: white; 
+        justify-content: space-around;
+        
+       
+    }
+
+h1{
+    align-content: left;
+    text-align: left;
+   margin-top: 0.1px;
+   margin-right: 30px;
+   font-weight: bolder;
+   font-size: 40px;
+  
+}
+  
+.search{
+    margin-top: 25px;
+    border-radius: 200px;
+}
+ 
+}
